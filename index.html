@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio - Reevandra</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Exo+2:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+    <!-- Background 3D Canvas -->
+    <div id="threejs-background"></div>
+    
+    <!-- Particles Background -->
+    <div id="particles-js"></div>
+    
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">PORT<span>FOLIO</span></a>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">Tentang</a></li>
+                <li><a href="#skills" class="nav-link">Keahlian</a></li>
+                <li><a href="#portfolio" class="nav-link">Portofolio</a></li>
+                <li><a href="#experience" class="nav-link">Pengalaman</a></li>
+                <li><a href="#contact" class="nav-link">Kontak</a></li>
+            </ul>
+            <div class="nav-toggle" id="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="section hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h3 class="hero-subtitle">Halo, saya</h3>
+                        <h1 class="hero-title glitch" data-text="Reevandra">Reevandra</h1>
+                        <h2 class="hero-role">Frontend Developer & UI/UX Designer</h2>
+                        <p class="hero-description">
+                            Saya membuat pengalaman digital yang menarik dan intuitif dengan teknologi modern dan desain kreatif.
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="#portfolio" class="btn btn-primary">Lihat Portofolio</a>
+                            <a href="#contact" class="btn btn-secondary">Hubungi Saya</a>
+                        </div>
+                    </div>
+                    <div class="hero-visual">
+                        <div class="floating-card">
+                            <div class="card-inner">
+                                <div class="card-front">
+                                    <div class="profile-image">
+                                        <div class="image-placeholder">
+                                            <i class="fas fa-user-astronaut"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-back">
+                                    <p>"Kreativitas tanpa batas dalam setiap kode"</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section about-section">
+            <div class="container">
+                <h2 class="section-title">Tentang <span>Saya</span></h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>
+                            Saya adalah seorang pengembang web dengan spesialisasi dalam frontend development dan desain UI/UX. 
+                            Saya memiliki passion untuk menciptakan antarmuka yang tidak hanya indah tetapi juga fungsional dan mudah digunakan.
+                        </p>
+                        <p>
+                            Dengan pengalaman lebih dari 1 tahun di industri, saya telah bekerja pada berbagai proyek mulai dari 
+                            website perusahaan hingga aplikasi web kompleks.
+                        </p>
+                        <div class="about-stats">
+                            <div class="stat">
+                                <h3 class="stat-number" data-target="50">0</h3>
+                                <p class="stat-label">Proyek Selesai</p>
+                            </div>
+                            <div class="stat">
+                                <h3 class="stat-number" data-target="30">0</h3>
+                                <p class="stat-label">Klien Puas</p>
+                            </div>
+                            <div class="stat">
+                                <h3 class="stat-number" data-target="5">0</h3>
+                                <p class="stat-label">Tahun Pengalaman</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-visual">
+                        <div class="code-animation">
+                            <pre><code class="html-code">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;title&gt;My Portfolio&lt;/title&gt;
+  &lt;style&gt;
+    .innovation {
+      color: #ff0055;
+      animation: glow 2s infinite;
+    }
+  &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;Welcome to &lt;span class="innovation"&gt;Innovation&lt;/span&gt;&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+                            </code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section skills-section">
+            <div class="container">
+                <h2 class="section-title">Keahlian <span>Saya</span></h2>
+                <div class="skills-container">
+                    <div class="skill-category">
+                        <h3 class="skill-category-title">Frontend</h3>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">HTML/CSS</span>
+                                    <span class="skill-percentage" data-percent="95">95%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="95"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">JavaScript</span>
+                                    <span class="skill-percentage" data-percent="90">90%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="90"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">React</span>
+                                    <span class="skill-percentage" data-percent="85">85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="85"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3 class="skill-category-title">Backend</h3>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Node.js</span>
+                                    <span class="skill-percentage" data-percent="80">80%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="80"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">PHP</span>
+                                    <span class="skill-percentage" data-percent="75">75%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="75"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Python</span>
+                                    <span class="skill-percentage" data-percent="70">70%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="70"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skills-visual">
+                    <div class="tech-icons">
+                        <div class="tech-icon"><i class="fab fa-html5"></i></div>
+                        <div class="tech-icon"><i class="fab fa-css3-alt"></i></div>
+                        <div class="tech-icon"><i class="fab fa-js"></i></div>
+                        <div class="tech-icon"><i class="fab fa-react"></i></div>
+                        <div class="tech-icon"><i class="fab fa-node-js"></i></div>
+                        <div class="tech-icon"><i class="fab fa-python"></i></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="section portfolio-section">
+            <div class="container">
+                <h2 class="section-title">Portofolio <span>Saya</span></h2>
+                <div class="portfolio-filter">
+                    <button class="filter-btn active" data-filter="all">Semua</button>
+                    <button class="filter-btn" data-filter="web">Web Development</button>
+                    <button class="filter-btn" data-filter="design">UI/UX Design</button>
+                    <button class="filter-btn" data-filter="mobile">Mobile Apps</button>
+                </div>
+                <div class="portfolio-grid">
+                    <div class="portfolio-item" data-category="web">
+                        <div class="portfolio-card">
+                            <div class="portfolio-image">
+                                <div class="image-overlay">
+                                    <h3>E-Commerce Platform</h3>
+                                    <p>Website e-commerce dengan React dan Node.js</p>
+                                </div>
+                            </div>
+                            <div class="portfolio-info">
+                                <h3 class="portfolio-title">E-Commerce Platform</h3>
+                                <p class="portfolio-description">Platform e-commerce lengkap dengan sistem pembayaran dan dashboard admin.</p>
+                                <div class="portfolio-tags">
+                                    <span class="tag">React</span>
+                                    <span class="tag">Node.js</span>
+                                    <span class="tag">MongoDB</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-item" data-category="design">
+                        <div class="portfolio-card">
+                            <div class="portfolio-image">
+                                <div class="image-overlay">
+                                    <h3>Finance Dashboard UI</h3>
+                                    <p>Dashboard untuk aplikasi keuangan pribadi</p>
+                                </div>
+                            </div>
+                            <div class="portfolio-info">
+                                <h3 class="portfolio-title">Finance Dashboard UI</h3>
+                                <p class="portfolio-description">Desain dashboard untuk aplikasi keuangan dengan visualisasi data interaktif.</p>
+                                <div class="portfolio-tags">
+                                    <span class="tag">Figma</span>
+                                    <span class="tag">UI Design</span>
+                                    <span class="tag">Prototyping</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-item" data-category="mobile">
+                        <div class="portfolio-card">
+                            <div class="portfolio-image">
+                                <div class="image-overlay">
+                                    <h3>Fitness Tracker App</h3>
+                                    <p>Aplikasi mobile untuk tracking aktivitas fitness</p>
+                                </div>
+                            </div>
+                            <div class="portfolio-info">
+                                <h3 class="portfolio-title">Fitness Tracker App</h3>
+                                <p class="portfolio-description">Aplikasi mobile React Native untuk melacak aktivitas olahraga dan nutrisi.</p>
+                                <div class="portfolio-tags">
+                                    <span class="tag">React Native</span>
+                                    <span class="tag">Firebase</span>
+                                    <span class="tag">Mobile</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Timeline -->
+        <section id="experience" class="section experience-section">
+            <div class="container">
+                <h2 class="section-title">Pengalaman <span>Programming</span></h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">2024 - Sekarang</div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-title">Senior Frontend Developer</h3>
+                            <p class="timeline-company">Tech Innovations Inc.</p>
+                            <p class="timeline-description">Memimpin tim pengembangan frontend untuk aplikasi web perusahaan. Menerapkan arsitektur komponen yang scalable dan meningkatkan performa aplikasi.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">2025 - 2027</div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-title">UI/UX Designer & Developer</h3>
+                            <p class="timeline-company">Creative Digital Agency</p>
+                            <p class="timeline-description">Mendesain dan mengembangkan antarmuka pengguna untuk berbagai klien dari berbagai industri. Membuat prototipe interaktif dan sistem design.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">2024 - 2025</div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-title">Web Developer</h3>
+                            <p class="timeline-company">Startup XYZ</p>
+                            <p class="timeline-description">Mengembangkan aplikasi web dari awal menggunakan React.js dan Node.js. Berkolaborasi dengan tim desain untuk implementasi UI/UX.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact-section">
+            <div class="container">
+                <h2 class="section-title">Hubungi <span>Saya</span></h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Email</h3>
+                                <p>reevandraatta@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Telepon</h3>
+                                <p>+62 877 </p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Lokasi</h3>
+                                <p>Jakarta, Indonesia</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <input type="text" placeholder="Nama Anda" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Email Anda" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Pesan Anda" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">PORT<span>FOLIO</span></div>
+                <p class="footer-text">© 2024 Reevandra. Semua hak dilindungi.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="particles.js"></script>
+    <script src="threejs-background.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
